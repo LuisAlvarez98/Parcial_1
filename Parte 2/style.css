@@ -1,76 +1,128 @@
 header {
-
-
 }
 
-
 h2 {
-
 }
 
 .nav {
-
-
-  }
-
-  li {
-
-
-  }
-
-  .content{
-
+  list-style-type: none;
 }
 
+li {
+  border-style: groove;
+  text-align: center;
+}
+
+.content {
+}
+
+.aside {
+}
+
+.slidebox {
+}
+
+.article {
+}
+
+.poem {
+}
+
+@media (min-width: 990px) {
+  .nav {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav > li {
+    padding: 0px 10px;
+    margin: 0px 5px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header > h2 {
+    padding: 0px 4.5em;
+    border-style: groove;
+  }
+  .nav > li {
+    padding: 0px 2.5em;
+    margin: 0px 5px;
+  }
+  .content {
+    border-style: groove;
+    display: flex;
+  }
+  .article {
+    border-style: groove;
+  }
+  .poem {
+    border-style: groove;
+  }
   .aside {
-
+    border-style: groove;
   }
-
-  .slidebox{
-
-   
+  .slidebox {
+    border-style: groove;
+    width: calc(150px);
+    text-align: center;
   }
-
-  .article{
-
-  }
-
-
-.poem{
-
 }
-
-
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
-  @media (min-width:600px) and (max-width: 990px)  {
-    .article {
-
-  } 
-header{
-
-}
+@media (min-width: 600px) and (max-width: 990px) {
+  .article {
+    border-style: groove;
+  }
+  .poem {
+    border-style: groove;
+  }
+  .aside {
+    border-style: groove;
+  }
+  .slidebox {
+    border-style: groove;
+    width: 150px;
+    text-align: center;
+  }
+  header {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav > li {
+    padding: 0px 10px;
+    margin: 0px 5px;
+  }
+  .content {
+    border-style: groove;
+    display: flex;
+  }
 }
 
 /*  Small devices    */
-@media (max-width:599px) {
-
-header,.content{
-
-}
-
-.nav {
-
-
+@media (max-width: 599px) {
+  header,
+  .content {
+    display: none;
   }
 
+  .nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+  }
 
-.nav > li {
-
+  .nav > li {
+    width: 70%;
+    margin-top: 2.5em;
+  }
 }
-
-
-}
-
-
-  
